@@ -1,0 +1,213 @@
+.matchup-block {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    position: absolute;
+    margin-left: -200px;
+    /* margin-bottom: 100px;
+    margin-top: 100px; */
+    vertical-align: middle;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.matchup-block:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block2 {
+    border-radius: 15px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -190px;
+    margin-bottom: 100px;
+  }
+.matchup-block2:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block3 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-left: -200px;
+    margin-bottom: 200px;
+  }
+.matchup-block3:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block4 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -140px;
+  }
+.matchup-block4:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block5 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 150px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -300px;
+  }
+.matchup-block5:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block6 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    transition: 0.5s;
+    float: right;
+    margin-left: 900px;
+    margin-bottom: 20px;
+    position:relative;
+  }
+.matchup-block6:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.stat-block {
+  border-radius: 15px;
+    border: solid #2AAAF0 4px;
+    height: 250px;
+    padding: 5px;
+    display: flex;
+    width: 200px;
+    transition: 0.5s;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    position:relative;
+  }
+.stat-block:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+hr{
+  width: 100px;
+
+}
+hr.header{
+  width: 1000px;
+
+}
+.vl {
+  border-left: 6px solid green;
+  margin-left: 120px;
+  margin-top: -30px;
+  height: 50px;
+}
+.bracket {
+  display: flex;
+  flex-direction:column;
+}
+h3 {
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: #150578;
+  margin:auto
+}
+h4 {
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: #150678;
+  margin-top:7px;
+}
+h3:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 7px #FAED27;
+
+}
+.block-wrapper {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.block-wrapper:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.block-wrapper-thin {
+    border-radius: 15px;
+    border: solid #150578  2px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.block-wrapper-thin:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.valign1, .valign2{
+  display: inline-block;
+  vertical-align: middle;
+}
+.halign1, .halign2{
+  display: inline-block;
+  margin: auto; /* added */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+select {
+  /* A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* Additional resets for further consistency */
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+button{
+   position:absolute; border:0;
+}
+button:hover{
+  transition: 1s;
+  box-shadow: 0px 0px 7px #2AAAF0;
+}

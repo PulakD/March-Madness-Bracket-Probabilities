@@ -1,0 +1,317 @@
+/* 
+This html file builds the home page. The .matchup-block functions format the individual cells you can see that
+correspond to each matchup in the bracket. For .matchup-blockX, X is the number of the round we are in, so 
+.matchup-block2 is for the second column of 16 matchups in round two and so on and so forth 
+*/
+.matchup-block {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    position: absolute;
+    margin-left: -200px;
+    /* margin-bottom: 100px;
+    margin-top: 100px; */
+    vertical-align: middle;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+/* 
+The matchup-block:hover functions detail what happens when you hover the cursor over a matchup cell in a specific round
+As you can see when you hover over a cell, it gets surrounded by a light blue shadow.
+*/
+.matchup-block:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block2 {
+    border-radius: 15px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -190px;
+    margin-bottom: 100px;
+}
+.matchup-block2:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block3 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-left: -200px;
+    margin-bottom: 200px;
+  }
+.matchup-block3:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block4 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 80px;
+    padding: 5px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -140px;
+  }
+.matchup-block4:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block5 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 150px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    transition: 0.5s;
+    position:absolute;
+    margin-left: -300px;
+  }
+.matchup-block5:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+.matchup-block6 {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    transition: 0.5s;
+    float: right;
+    margin-left: 900px;
+    margin-bottom: 20px;
+    position:relative;
+  }
+.matchup-block6:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+/* 
+the stat-block styles the cell that pops up when you click two different teams and it displays the probability 
+of that matchup happening
+*/
+.stat-block {
+  border-radius: 15px;
+    border: solid #2AAAF0 4px;
+    height: 250px;
+    padding: 5px;
+    display: flex;
+    width: 200px;
+    transition: 0.5s;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    position:relative;
+  }
+.stat-block:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+hr{
+  width: 100px;
+}
+hr.header{
+  width: 1000px;
+}
+.bracket {
+  display: flex;
+  flex-direction:column;
+}
+h3 {
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: #150578;
+  margin:auto
+}
+h4 {
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight: 300;
+  color: #150678;
+  margin-top:7px;
+}
+h3:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 7px #FAED27;
+}
+.block-wrapper {
+    border-radius: 15px;
+    border: solid #150578 4px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.block-wrapper:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px #2AAAF0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button{
+   position:absolute; border:0;
+}
+button:hover{
+  transition: 1s;
+  box-shadow: 0px 0px 7px #2AAAF0;
+}
+
+/*----------------------------------------------------------------*/
+
+section {
+  margin: 0 8px;
+}
+
+.tournament {
+    display: flex;
+    flex-direction: row;
+}
+.tournament .round {
+  font-size: .75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+}
+.tournament .round .spacer {
+  flex-grow: 2;
+}
+.tournament .round .spacer:first-child,
+.tournament .round .spacer:last-child {
+  flex-grow: 1;
+}
+
+.first-four {
+  border: 1px solid #888;
+  border-radius: 1em;
+  background-color: lightcyan;
+  padding: 0 1em;
+}
+.tournament-header {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1em;
+  border: 1px solid black;
+  background-color: #f54e00;
+  color: white;
+}
+
+.first-four-winner li.game-left,
+.round-1 li.game-left,
+.round-2 li.game-left,
+.round-3 li.game-left,
+.round-4 li.game-left,
+.semi-final li.game-left {
+    padding-left: 0.5em;
+}
+
+.first-four-winner li.game-right,
+.round-1 li.game-right,
+.round-2 li.game-right,
+.round-3 li.game-right,
+.round-4 li.game-right,
+.semi-final li.game-right {
+    padding-right: 0.5em;
+}
+
+.region {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+.region-right {
+    text-align:right;
+  padding-right: 5px;
+}
+.region-left {
+    text-align:left;
+  padding-left: 5px;
+}
+
+ul.seed li.game-left span:first-child,
+ul.seed li.game-right span:last-child {
+    font-size: 0.5em;
+}
+
+li.game-right {
+  text-align: right;
+  border-left: 1px solid #aaa;
+}
+li.game-left {
+    border-right: 1px solid #aaa;
+}
+li.game-bottom {
+  border-bottom: 1px solid #aaa;
+}
+li.game-top {
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+li.game-left.spacer {
+    border-right: 1px solid #aaa;
+    min-height: 5px;
+    padding-right:.25em;
+}
+li.game-right.spacer {
+    border-left: 1px solid #aaa;
+    min-height: 5px;
+    padding-left:.25em;
+    text-align: left;
+}
+
+.final {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight:bold;
+}
+.finals .centered {
+    text-align:center;
+    font-weight:bold;
+}
+.finals .centered > input {
+    display:block;
+    width:4em;
+    margin: 0 auto 0 auto;
+    text-align:center;
+}
+
+.body-first-child {
+  margin-top: -45px;
+}
+.extra-padding {
+  padding-top: 45px;
+}
